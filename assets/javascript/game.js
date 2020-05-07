@@ -13,7 +13,7 @@ let teamtwonumgoal = document.querySelector ('#teamtwo-numgoals')
 
 
 resetbutton.addEventListener('click', function(){
-    console.log("reset")
+    console.log('reset')
     let newReset = Number(numreset.innerHTML) + 1
     numreset.innerHTML = newReset
     teamonenumshots.innerHTML = 0
@@ -24,7 +24,7 @@ resetbutton.addEventListener('click', function(){
 })
 
 teamone.addEventListener('click', function(){
-    console.log('team one shots');
+    console.log('team one shots')
     let teamoneshotstaken = Number(teamonenumshots.innerHTML) + 1
     teamonenumshots.innerHTML = teamoneshotstaken
     let d = Math.random()
@@ -34,8 +34,8 @@ if (d < 0.7){
     teamonenumgoal.innerHTML = goalnumber1
 }
 })
-teamtwo.addEventListener("click", function(){
-    console.log('team two shot');
+teamtwo.addEventListener('click', function(){
+    console.log('team two shot')
     let teamtwoshotstaken = Number(teamtwonumshots.innerHTML) + 1
     teamtwonumshots.innerHTML = teamtwoshotstaken
     let d = Math.random()
